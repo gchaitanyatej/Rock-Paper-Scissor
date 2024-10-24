@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        
+        <div class="scores">
+            <div class="score-box" id="playerScore">Player: 0</div>
+            <div class="score-box" id="computerScore">Computer: 0</div>
+        </div>
+
+        <div class="game">
+            <div class="triangle-layout">
+                <button id="rock" class="choice round-icon">Rock</button>
+                <button id="paper" class="choice round-icon">Paper</button>
+                <button id="scissors" class="choice round-icon">Scissors</button>
+            </div>
+            <div id="result" class="result">Make your move!</div>
+        </div>
+
+        <div class="actions">
+            <button id="restart" class="restart">Restart Game</button>
+            <button id="next" class="next" style="display:none;">Next</button>
+        </div>
+
+        <div class="rules-btn">
+            <button id="rules-btn">Rules</button>
+        </div>
+
+        <div id="rules-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Game Rules</h2>
+                <p>1. Rock beats Scissors</p>
+                <p>2. Scissors beats Paper</p>
+                <p>3. Paper beats Rock</p>
+            </div>
+        </div>
+
+        <div id="win-message-modal" class="modal">
+            <div class="modal-content">
+                <h2>HURRAY!! YOU WON THE GAME</h2>
+                <button id="play-again" class="play-again">PLAY AGAIN</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
